@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Budget Girl - Discover affordable fashion, beauty, home and lifestyle finds in India.">
+  <title>Budget Girl | Good Finds. Better Prices.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #f8f5ef;
+      --beige: #eee6da;
+      --brown: #49372e;
+      --muted: #8a796d;
+      --white: #fffefa;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--cream);
+      color: var(--brown);
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      padding: 22px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e9e0d5;
+      background: var(--cream);
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 29px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    nav { display: flex; gap: 25px; font-size: 13px; }
+    nav a:hover { text-decoration: underline; }
+
+    .hero {
+      padding: 85px 20px;
+      text-align: center;
+      background: var(--beige);
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 11px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.12;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .hero p {
+      max-width: 490px;
+      margin: 20px auto 28px;
+      color: #716156;
+      line-height: 1.8;
+    }
+
+    .shop-button {
+      display: inline-block;
+      background: var(--brown);
+      color: white;
+      padding: 14px 27px;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+
+    section { padding: 65px 7%; }
+
+    .section-heading { text-align: center; margin-bottom: 35px; }
+
+    .section-heading h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 35px;
+      margin-bottom: 9px;
+    }
+
+    .section-heading p { color: var(--muted); font-size: 13px; }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .category {
+      background: var(--white);
+      padding: 35px 12px;
+      text-align: center;
+      border: 1px solid #eee6dc;
+      transition: .2s;
+    }
+
+    .category:hover { transform: translateY(-4px); }
+
+    .category .symbol { font-size: 30px; margin-bottom: 13px; }
+    .category h3 { font-size: 15px; }
+
+    .category p {
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 7px;
+    }
+
+    .coming-soon {
+      max-width: 650px;
+      margin: auto;
+      background: var(--white);
+      border: 1px solid #eee6dc;
+      text-align: center;
+      padding: 40px 25px;
+      line-height: 1.8;
+    }
+
+    .coming-soon p { color: var(--muted); font-size: 13px; }
+
+    .note {
+      background: var(--beige);
+      padding: 30px;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .note p { font-size: 12px; color: #716156; }
+
+    footer {
+      padding: 35px 7%;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    footer p { margin-top: 9px; }
+
+    @media (max-width: 650px) {
+      header { flex-direction: column; gap: 16px; }
+      nav { gap: 14px; flex-wrap: wrap; justify-content: center; }
+      .hero { padding: 65px 20px; }
+      .categories { grid-template-columns: repeat(2, 1fr); }
+      section { padding: 48px 5%; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="#" class="logo">BUDGET GIRL.</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="eyebrow">Good finds. Better prices.</div>
+      <h1>Little finds.<br>Big happiness.</h1>
+      <p>
+        Discover affordable fashion, beauty, home and lifestyle
+        finds. Shop smarter without spending more.
+      </p>
+      <a href="#categories" class="shop-button">EXPLORE OUR FINDS</a>
+    </section>
+
+    <section id="categories">
+      <div class="section-heading">
+        <h2>Find Your Favourite</h2>
+        <p>A little something for every budget.</p>
+      </div>
+
+      <div class="categories">
+        <a class="category" href="#products">
+          <div class="symbol">♡</div>
+          <h3>Fashion Finds</h3>
+          <p>Everyday style</p>
+        </a>
+
+        <a class="category" href="#products">
+          <div class="symbol">✿</div>
+          <h3>Beauty Finds</h3>
+          <p>Beauty on a budget</p>
+        </a>
+
+        <a class="category" href="#products">
+          <div class="symbol">⌂</div>
+          <h3>Home Finds</h3>
+          <p>Cosy little spaces</p>
+        </a>
+
+        <a class="category" href="#products">
+          <div class="symbol">✎</div>
+          <h3>Student Finds</h3>
+          <p>Study essentials</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="section-heading">
+        <h2>Latest Budget Finds</h2>
+        <p>Affordable discoveries, carefully selected.</p>
+      </div>
+
+      <div class="coming-soon">
+        <h3>Something lovely is coming!</h3>
+        <p>
+          We're currently collecting our favourite affordable finds.
+          Come back soon for product recommendations and shopping links.
+        </p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-heading">
+        <h2>A Little About Us</h2>
+        <p>
+          Budget Girl believes that finding lovely things
+          shouldn't mean spending a fortune.
+        </p>
+      </div>
+    </section>
+
+    <div class="note">
+      <strong>SHOP SMARTER. LOVE YOUR FINDS.</strong>
+      <p>Follow @budgetgirl.in on Instagram for more affordable discoveries.</p>
+    </div>
+  </main>
+
+  <footer>
+    <strong>BUDGET GIRL.</strong>
+    <p>Good finds. Better prices. © 2026 Budget Girl.</p>
+    <p>Affiliate disclosure: Some links on this website may earn us a commission.
+       We will identify affiliate links clearly.</p>
+  </footer>
+
+</body>
+</html>
